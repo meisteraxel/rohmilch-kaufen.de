@@ -7,8 +7,35 @@
   src: url("./assets/fonts/Pacifico-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("./assets/fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Inter-ExtraBold";
+  src: url("./assets/fonts/Inter-ExtraBold.ttf");
+}
+
 .font-pacifico {
   font-family: "Pacifico", sans-serif !important;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif !important;
+}
+
+.font-inter-bold {
+  font-family: "Inter-Bold", sans-serif !important;
+}
+
+.font-inter-extrabold {
+  font-family: "Inter-ExtraBold", sans-serif !important;
 }
 
 .bg-image {

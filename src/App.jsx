@@ -21,7 +21,10 @@ function App() {
     <>
       <img src={BgImage} alt="" className="bg-image" />
       <main className="h-dvh container mx-auto px-5 flex flex-col justify-center items-center gap-3">
-        <h1 className="text-3xl font-pacifico">Übersicht</h1>
+        <h1 className="text-6xl font-extrabold font-inter">
+          Rohmilch <br />
+          <span>Übersicht</span>
+        </h1>
         <iframe
           src="https://airtable.com/embed/appVQeK2S27Ao22O2/shrxwBedOL86REAZz?backgroundColor=purple&layout=card&viewControls=on"
           style={iframeListStyle}
