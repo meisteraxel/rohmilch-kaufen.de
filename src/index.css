@@ -10,3 +10,11 @@
 .font-pacifico {
   font-family: "Pacifico", sans-serif !important;
 }
+
+.bg-image {
+  position: fixed;
+  bottom: -40%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
