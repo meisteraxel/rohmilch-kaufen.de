@@ -30,7 +30,11 @@ function App() {
           </span>
         </h1>
         <div className="container relative py-5 flex flex-col">
-          <img src={Gras} alt="" className="w-24 h-24 absolute" />
+          <img
+            src={Gras}
+            alt=""
+            className="w-24 h-24 absolute -z-10 -left-14 -top-1"
+          />
           <button
             className="self-end mb-4 bg-transparent cursor-pointer font-inter-bold text-sm underline"
             onClick={togglePopup}
