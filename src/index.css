@@ -37,11 +37,8 @@
 .font-inter-extrabold {
   font-family: "Inter-ExtraBold", sans-serif !important;
 }
-
 .bg-image {
-  position: fixed;
+  position: absolute;
   bottom: -50%;
-  left: 0;
-  z-index: -10;
   width: 100%;
 }
