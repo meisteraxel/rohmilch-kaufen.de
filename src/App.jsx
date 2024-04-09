@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <img src={BgImage} alt="" className="bg-image" />
-      <main className="h-dvh mx-auto px-5 flex flex-col justify-center items-center gap-3">
+      <main className="mx-auto px-5 flex flex-col items-center gap-3">
         <h1 className="text-6xl font-inter-extrabold">
           Rohmilch
           <span className="font-pacifico block mt-2 relative left-24 text-5xl">
