@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Form from "./components/Form.jsx";
-import BgImage from "./assets/images/background-wave.svg";
-import Gras from "./assets/images/gras.png";
+import GrasIcon from "./assets/images/gras.png";
 import "./index.css";
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
     border: "1px solid #ccc",
     width: "100%",
     height: "700px",
-    "box-shadow": "0px 28px 40px 0px rgba(0,0,0,0.5)",
+    boxShadow: "0px 28px 40px 0px rgba(0,0,0,0.5)",
   };
 
   const [showPopup, setShowPopup] = useState(false);
@@ -29,12 +28,12 @@ function App() {
       </h1>
       <div className="container relative py-5 flex flex-col">
         <img
-          src={Gras}
+          src={GrasIcon}
           alt=""
           className="w-24 h-24 absolute -z-10 -left-14 -top-1"
         />
         <button
-          className="self-end mb-4 bg-transparent cursor-pointer font-inter-bold text-sm underline"
+          className="self-end mb-4 bg-transparent cursor-pointer font-inter-bold text-sm underline hover:opacity-50 transition-opacity"
           onClick={togglePopup}
           id="toggleButton"
         >
