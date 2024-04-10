@@ -33,7 +33,7 @@ function App() {
         </button>
         <iframe
           src="https://airtable.com/embed/appVQeK2S27Ao22O2/shrxwBedOL86REAZz?backgroundColor=purple&layout=card&viewControls=on"
-          className="iframe-list"
+          className="bg-white w-full h-[80vh] shadow-[0_28px_40px_0px_rgba(0,0,0,0.5)]"
         ></iframe>
       </div>
       {showPopup && <Form toggleForm={togglePopup} />}

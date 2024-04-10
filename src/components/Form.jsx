@@ -2,13 +2,6 @@ import React from "react";
 import "../index.css";
 
 function Form(props) {
-  const iframeFormStyle = {
-    background: "transparent",
-    border: "1px solid #ccc",
-    width: "100%",
-    height: "800px",
-  };
-
   return (
     <div
       id="popup"
@@ -24,7 +17,7 @@ function Form(props) {
       <div className="container bg-white p-8 rounded shadow-sm z-10">
         <iframe
           src="https://airtable.com/embed/appVQeK2S27Ao22O2/pagzRDnO0wE9H3csR/form"
-          style={iframeFormStyle}
+          className="bg-white w-full border h-[80vh]"
         ></iframe>
       </div>
     </div>

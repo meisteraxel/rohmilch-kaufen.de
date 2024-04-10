@@ -37,16 +37,3 @@
 .font-inter-extrabold {
   font-family: "Inter-ExtraBold", sans-serif !important;
 }
-.bg-image {
-  position: absolute;
-  bottom: -50%;
-  width: 100%;
-}
-
-.iframe-list {
-  background: transparent;
-  border: 1px solid #ccc;
-  width: 100%;
-  height: 80vh;
-  box-shadow: 0px 28px 40px 0px rgba(0, 0, 0, 0.5);
-}
