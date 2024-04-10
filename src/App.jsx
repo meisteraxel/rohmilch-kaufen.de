@@ -11,7 +11,7 @@ function App() {
   }
 
   return (
-    <main className="mx-auto px-5 flex flex-col items-center gap-3">
+    <main className="mx-auto px-10 flex flex-col items-center gap-3">
       <h1 className="text-6xl font-inter-extrabold mt-24">
         Rohmilch
         <br />
