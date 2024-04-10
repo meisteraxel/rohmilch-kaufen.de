@@ -19,7 +19,7 @@ function App() {
           Übersicht
         </span>
       </h1>
-      <div className="container relative py-5 flex flex-col">
+      <div className="container relative py-5 flex flex-col w-1/2">
         <img
           src={GrasIcon}
           alt=""

@@ -22,8 +22,8 @@ function Pageload() {
           } flex items-center justify-center flex-col`}
         >
           <img src={CowAnimation} alt="cow animation" />
-          <p className="text-white font-pacifico">
-            Die Kuh wird gerade gemolken...
+          <p className="text-white font-pacifico text-lg">
+            Die Kühe werden gerade gemolken...
           </p>
         </div>
       </div>
