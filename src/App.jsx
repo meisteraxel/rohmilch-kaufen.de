@@ -12,14 +12,14 @@ function App() {
 
   return (
     <main className="mx-auto px-10 flex flex-col items-center gap-3">
-      <h1 className="text-6xl font-inter-extrabold mt-24">
+      <h1 className="text-6xl font-inter-extrabold mt-10">
         Rohmilch
         <br />
         <span className="font-pacifico mt-2 relative left-24 text-5xl">
           Übersicht
         </span>
       </h1>
-      <div className="container relative py-5 flex flex-col w-1/2">
+      <div className="container relative py-5 flex flex-col max-w-[1000px]">
         <img
           src={GrasIcon}
           alt=""
