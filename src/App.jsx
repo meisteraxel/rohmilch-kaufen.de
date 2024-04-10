@@ -4,14 +4,6 @@ import GrasIcon from "./assets/images/gras.png";
 import "./index.css";
 
 function App() {
-  const iframeListStyle = {
-    background: "transparent",
-    border: "1px solid #ccc",
-    width: "100%",
-    height: "700px",
-    boxShadow: "0px 28px 40px 0px rgba(0,0,0,0.5)",
-  };
-
   const [showPopup, setShowPopup] = useState(false);
 
   function togglePopup() {
@@ -41,7 +33,7 @@ function App() {
         </button>
         <iframe
           src="https://airtable.com/embed/appVQeK2S27Ao22O2/shrxwBedOL86REAZz?backgroundColor=purple&layout=card&viewControls=on"
-          style={iframeListStyle}
+          className="iframe-list"
         ></iframe>
       </div>
       {showPopup && <Form toggleForm={togglePopup} />}
