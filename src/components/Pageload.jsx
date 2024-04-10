@@ -16,11 +16,16 @@ function Pageload() {
   return (
     <>
       <div className={`pageload-container ${isVisible ? "" : "hidden"}`}>
-        <img
-          src={CowAnimation}
-          alt="cow animation"
-          className={`pageload-animation ${isVisible ? "" : "hidden"}`}
-        />
+        <div
+          className={`pageload-animation ${
+            isVisible ? "" : "hidden"
+          } flex items-center justify-center flex-col`}
+        >
+          <img src={CowAnimation} alt="cow animation" />
+          <p className="text-white font-pacifico">
+            Die Kuh wird gerade gemolken...
+          </p>
+        </div>
       </div>
     </>
   );
