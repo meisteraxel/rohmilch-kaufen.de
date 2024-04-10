@@ -32,10 +32,12 @@ function App() {
         >
           Vorschlag einreichen
         </button>
-        <iframe
-          src="https://airtable.com/embed/appVQeK2S27Ao22O2/shrxwBedOL86REAZz?backgroundColor=purple&layout=card&viewControls=on"
-          className="bg-white w-full h-[80vh] shadow-[0_28px_40px_0px_rgba(0,0,0,0.5)]"
-        ></iframe>
+        <div className="bg-[#fafafa] p-5 rounded-xl">
+          <iframe
+            src="https://airtable.com/embed/appVQeK2S27Ao22O2/shrxwBedOL86REAZz?backgroundColor=purple&layout=card&viewControls=on"
+            className="bg-white w-full h-[60vh] rounded-2xl border"
+          ></iframe>
+        </div>
       </div>
       {showPopup && <Form toggleForm={togglePopup} />}
     </main>
