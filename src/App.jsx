@@ -14,7 +14,8 @@ function App() {
     <main className="mx-auto px-5 flex flex-col items-center gap-3">
       <h1 className="text-6xl font-inter-extrabold mt-24">
         Rohmilch
-        <span className="font-pacifico block mt-2 relative left-24 text-5xl">
+        <br />
+        <span className="font-pacifico mt-2 relative left-24 text-5xl">
           Übersicht
         </span>
       </h1>
