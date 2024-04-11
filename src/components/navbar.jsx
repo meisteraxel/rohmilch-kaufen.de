@@ -13,19 +13,19 @@ function Navbar(props) {
           <li
             className={
               location.pathname === "/"
-                ? "border-b-4 border-black py-1"
-                : "py-1 hover:border-b-4 hover:border-black transition-all"
+                ? "border-b-4 border-black py-1 relative"
+                : "py-1 relative nav-link"
             }
           >
             <Link to="/" className="custom-cursor">
-              Home
+              Übersicht
             </Link>
           </li>
           <li
             className={
               location.pathname === "/faq"
-                ? "border-b-4 border-black py-1"
-                : "py-1 hover:border-b-4 hover:border-black transition-all"
+                ? "border-b-4 border-black py-1 relative"
+                : "py-1 relative nav-link"
             }
           >
             <Link to="/faq" className="custom-cursor">

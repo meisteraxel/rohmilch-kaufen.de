@@ -23,8 +23,7 @@ function Pageload() {
         >
           <img src={CowAnimation} alt="cow animation" />
           <p className="text-white font-pacifico text-2xl text-center">
-            Einen Moment <br />
-            Kühe werden gemolken...
+            Einen Moment, Kühe werden gemolken...
           </p>
         </div>
       </div>
