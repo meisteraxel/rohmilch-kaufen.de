@@ -22,6 +22,11 @@
   src: url("./assets/fonts/Inter-ExtraBold.ttf");
 }
 
+@font-face {
+  font-family: "Inter-Black";
+  src: url("./assets/fonts/Inter-Black.ttf");
+}
+
 .font-pacifico {
   font-family: "Pacifico", sans-serif !important;
 }
@@ -36,6 +41,10 @@
 
 .font-inter-extrabold {
   font-family: "Inter-ExtraBold", sans-serif !important;
+}
+
+.font-inter-black {
+  font-family: "Inter-Black", sans-serif !important;
 }
 
 body {
@@ -99,4 +108,14 @@ body {
 
 .cta-button:hover:before {
   top: 0;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.content.show {
+  max-height: 100px;
 }
