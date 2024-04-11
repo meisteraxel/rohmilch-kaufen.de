@@ -1,11 +1,14 @@
 import React from "react";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 import "../index.css";
 
 function Faq() {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <>
+      <Navbar />
+      <Footer />
+    </>
   );
 }
 
