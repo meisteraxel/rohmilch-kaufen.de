@@ -3,7 +3,6 @@ import Pageload from "../components/pageload.jsx";
 import Footer from "../components/footer.jsx";
 import Navbar from "../components/navbar.jsx";
 import GrasIcon from "../assets/images/gras-icon.svg";
-import BubbleIcon from "../assets/images/gedanken.svg";
 import SmallCircle from "../assets/images/small-circle.png";
 import Circle from "../assets/images/circle.png";
 import Muh from "../assets/images/muh.png";

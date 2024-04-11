@@ -7,7 +7,9 @@ function Error() {
     <div className="flex flex-col items-center justify-center h-screen bg-white">
       <h1>404</h1>
       <h2>Page not found</h2>
-      <Link to="/">Go to home page</Link>
+      <Link to="/" className="underline">
+        Go to home page
+      </Link>
     </div>
   );
 }
