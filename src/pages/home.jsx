@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Pageload from "../components/pageload.jsx";
 import Footer from "../components/footer.jsx";
-import GrasIcon from "../assets/images/gras.png";
+import GrasIcon from "../assets/images/gras-icon.svg";
 import BubbleIcon from "../assets/images/gedanken.svg";
 import "../index.css";
 import Navbar from "../components/navbar.jsx";
@@ -28,7 +28,7 @@ function Home() {
           <img
             src={GrasIcon}
             alt=""
-            className="w-24 h-24 absolute -z-10 -left-14 -top-14"
+            className="w-18 h-18 absolute -z-10 -left-12 -top-12"
           />
           <img
             src={BubbleIcon}
