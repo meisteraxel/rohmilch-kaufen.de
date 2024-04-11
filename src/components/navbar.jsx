@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "../index.css";
-import CowLogo from "../assets/images/nav-cow-logo.png";
 import { Link, useLocation } from "react-router-dom";
 import Form from "./form";
+import CowLogo from "../assets/images/nav-cow-logo.png";
+import "../index.css";
 
 function Navbar() {
   const location = useLocation();

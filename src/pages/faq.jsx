@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import Footer from "../components/footer.jsx";
+import React from "react";
 import Navbar from "../components/navbar.jsx";
+import Footer from "../components/footer.jsx";
+import Accordion from "../components/accordion.jsx";
 import GrasIcon from "../assets/images/gras-icon.svg";
 import SmallCircle from "../assets/images/small-circle.png";
 import Circle from "../assets/images/circle.png";
 import Muh from "../assets/images/muh.png";
-import Accordion from "../components/accordion.jsx";
 import "../index.css";
 
 function Faq() {
