@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Form from "../components/form.jsx";
 import Pageload from "../components/pageload.jsx";
 import Footer from "../components/footer.jsx";
 import GrasIcon from "../assets/images/gras.png";
