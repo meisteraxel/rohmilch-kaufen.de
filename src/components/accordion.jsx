@@ -50,11 +50,19 @@ function Accordion() {
       {data.map((item, index) => (
         <div
           onClick={() => toggle(index)}
-          className="item rounded-lg bg-white p-5 font-inter cursor-pointer"
+          className="item rounded-lg bg-white p-5 font-inter cursor-pointer shadow-lg"
         >
           <div className="title font-inter-bold text-base flex justify-between items-center mb-3">
             <h2>{item.question}</h2>
-            <span>{selected === index ? "-" : "+"}</span>
+            <span
+              className={
+                selected === index
+                  ? "text-2xl rotate-45 transition-all"
+                  : "text-2xl transition-all"
+              }
+            >
+              +
+            </span>
           </div>
           <div className={selected === index ? "content show" : "content"}>
             {item.answer}

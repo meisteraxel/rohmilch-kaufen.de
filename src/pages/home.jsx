@@ -18,7 +18,7 @@ function Home() {
     <>
       <Navbar toggleForm={togglePopup} />
       <Pageload />
-      <main className="container mx-auto px-10 py-5 flex flex-col items-center">
+      <main className="container mx-auto px-10 py-5 flex flex-col items-center mb-10">
         <h1 className="text-6xl text-center font-inter-black mb-10 mt-20">
           Rohmilch
           <br />
