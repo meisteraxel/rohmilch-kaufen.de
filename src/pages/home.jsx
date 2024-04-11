@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Pageload from "../components/pageload.jsx";
 import Footer from "../components/footer.jsx";
 import Navbar from "../components/navbar.jsx";
@@ -7,10 +7,21 @@ import BubbleIcon from "../assets/images/gedanken.svg";
 import "../index.css";
 
 function Home() {
+  const [runPageload, setRunPageload] = useState(true);
+
+  // Run Pageload Animation only on first visit
+  useEffect(() => {
+    if (sessionStorage.getItem("visited") === null) {
+      setTimeout(() => sessionStorage.setItem("visited", true), 1000);
+    } else if (sessionStorage.getItem("visited") === "true") {
+      setRunPageload(false);
+    }
+  }, []);
+
   return (
     <>
       <Navbar />
-      <Pageload />
+      {runPageload && <Pageload />}
       <main className="container mx-auto px-10 py-5 flex flex-col items-center mb-10">
         <h1 className="text-6xl text-center font-inter-black mb-10 mt-20">
           Rohmilch
