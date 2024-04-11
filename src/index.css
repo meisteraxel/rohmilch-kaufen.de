@@ -135,3 +135,27 @@ body {
 .nav-link:hover::after {
   width: 100%;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn-animation-first {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fadeIn-animation-second {
+  animation: fadeIn 1s ease-in-out 1s forwards;
+}
+
+.fadeIn-animation-third {
+  animation: fadeIn 1s ease-in-out 2s forwards;
+}

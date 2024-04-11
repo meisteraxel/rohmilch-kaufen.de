@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import Footer from "../components/footer.jsx";
 import Navbar from "../components/navbar.jsx";
 import GrasIcon from "../assets/images/gras-icon.svg";
-import BubbleIcon from "../assets/images/gedanken.svg";
+import SmallCircle from "../assets/images/small-circle.png";
+import Circle from "../assets/images/circle.png";
+import Muh from "../assets/images/muh.png";
 import Accordion from "../components/accordion.jsx";
 import "../index.css";
 
@@ -25,9 +27,19 @@ function Faq() {
             className="w-18 h-18 absolute -z-10 -left-12 -top-12"
           />
           <img
-            src={BubbleIcon}
+            src={SmallCircle}
             alt=""
-            className="w-24 h-24 absolute -z-10 -right-[95px] -top-[95px]"
+            className=" absolute -z-10 -right-[10px] -top-[20px] opacity-0 fadeIn-animation-first"
+          />
+          <img
+            src={Circle}
+            alt=""
+            className="absolute -z-10 -right-[45px] -top-[40px] opacity-0 fadeIn-animation-second"
+          />
+          <img
+            src={Muh}
+            alt=""
+            className="absolute w-36 -z-10 -right-[175px] -top-[140px] opacity-0 fadeIn-animation-third"
           />
           <div className="bg-[#fafafa] p-5 rounded-xl h-[650px] flex items-center">
             <Accordion />
