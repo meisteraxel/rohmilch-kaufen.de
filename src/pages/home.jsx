@@ -5,6 +5,7 @@ import GrasIcon from "../assets/images/gras.png";
 import BubbleIcon from "../assets/images/gedanken.svg";
 import "../index.css";
 import Navbar from "../components/navbar.jsx";
+import Form from "../components/form.jsx";
 
 function Home() {
   const [showPopup, setShowPopup] = useState(false);
