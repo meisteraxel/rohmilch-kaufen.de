@@ -6,7 +6,7 @@ function Accordion() {
     {
       question: "Was ist Rohmilch?",
       answer:
-        "Rohmilch ist unbehandelte Milch, die direkt von der Kuh/Schaf/Ziege kommt und nicht pasteurisiert oder homogenisiert wurde. Sie enthält daher natürliche Bakterien und Enzyme.",
+        "Rohmilch ist unbehandelte Milch, die direkt von Kühen, Schafen, und Ziegen kommt und nicht pasteurisiert oder homogenisiert wurde. Sie enthält daher natürliche Bakterien und Enzyme.",
     },
     {
       question: "Wie lagert man Rohmilch?",

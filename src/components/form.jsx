@@ -21,7 +21,7 @@ function Form(props) {
         ></iframe>
         <button
           onClick={props.toggleForm}
-          className="border-[3px] px-3 py-2 mt-6 border-black font-inter-bold w-40"
+          className="border-[3px] px-3 py-2 mt-6 border-black font-inter-bold w-40 cta-button"
         >
           Schliessen
         </button>
