@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Pageload from "../components/Pageload.jsx";
-import Footer from "../components/Footer.jsx";
+import Footer from "../components/footer.jsx";
 import GrasIcon from "../assets/images/gras.png";
 import BubbleIcon from "../assets/images/gedanken.svg";
 import "../index.css";
-import Navbar from "../components/Navbar.jsx";
-import Form from "../components/Form.jsx";
+import Navbar from "../components/navbar.jsx";
+import Form from "../components/form.jsx";
 
 function Home() {
   const [showPopup, setShowPopup] = useState(false);
