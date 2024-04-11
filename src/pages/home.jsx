@@ -39,17 +39,17 @@ function Home() {
           <img
             src={SmallCircle}
             alt=""
-            className=" absolute -z-10 -right-[10px] -top-[20px] opacity-0 fadeIn-animation-first"
+            className=" absolute w-3 -z-10 -right-[10px] -top-[20px] opacity-0 fadeIn-animation-first"
           />
           <img
             src={Circle}
             alt=""
-            className="absolute -z-10 -right-[45px] -top-[40px] opacity-0 fadeIn-animation-second"
+            className="absolute w-5 -z-10 -right-[35px] -top-[35px] opacity-0 fadeIn-animation-second"
           />
           <img
             src={Muh}
             alt=""
-            className="absolute w-36 -z-10 -right-[175px] -top-[140px] opacity-0 fadeIn-animation-third"
+            className="absolute w-28 -z-10 -right-[135px] -top-[120px] opacity-0 fadeIn-animation-third"
           />
           <div className="bg-[#fafafa] p-5 rounded-xl">
             <iframe

@@ -51,7 +51,7 @@ body {
   background-image: url(./assets/images/background-wave.svg);
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-position-y: 400px;
+  background-position-y: 600px;
 }
 
 .pageload-container {
