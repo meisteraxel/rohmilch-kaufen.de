@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PlusIcon from "../assets/images/plus-icon.png";
 import "../index.css";
 
 function Accordion() {
@@ -54,15 +55,14 @@ function Accordion() {
         >
           <div className="title font-inter-bold text-base flex justify-between items-center mb-3">
             <h2>{item.question}</h2>
-            <span
+            <img
+              src={PlusIcon}
               className={
                 selected === index
-                  ? "text-2xl rotate-45 transition-all"
-                  : "text-2xl transition-all"
+                  ? "text-2xl rotate-45 transition-all w-4"
+                  : "text-2xl transition-all w-4"
               }
-            >
-              +
-            </span>
+            />
           </div>
           <div className={selected === index ? "content show" : "content"}>
             {item.answer}
