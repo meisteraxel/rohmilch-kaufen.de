@@ -14,7 +14,7 @@ function Navbar(props) {
             className={
               location.pathname === "/"
                 ? "border-b-4 border-black py-1"
-                : "py-1"
+                : "py-1 hover:border-b-4 hover:border-black transition-all"
             }
           >
             <Link to="/">Home</Link>
@@ -23,7 +23,7 @@ function Navbar(props) {
             className={
               location.pathname === "/faq"
                 ? "border-b-4 border-black py-1"
-                : "py-1"
+                : "py-1 hover:border-b-4 hover:border-black transition-all"
             }
           >
             <Link to="/faq">FAQ</Link>
@@ -31,10 +31,7 @@ function Navbar(props) {
         </ul>
       </div>
       <img src={CowLogo} alt="" className="h-28" />
-      <button
-        onClick={props.toggleForm}
-        className="border-[3px] px-3 py-4 border-black"
-      >
+      <button onClick={props.toggleForm} className="cta-button">
         Station hinzufügen
       </button>
     </nav>
