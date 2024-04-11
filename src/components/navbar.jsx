@@ -17,7 +17,9 @@ function Navbar(props) {
                 : "py-1 hover:border-b-4 hover:border-black transition-all"
             }
           >
-            <Link to="/">Home</Link>
+            <Link to="/" className="custom-cursor">
+              Home
+            </Link>
           </li>
           <li
             className={
@@ -26,7 +28,9 @@ function Navbar(props) {
                 : "py-1 hover:border-b-4 hover:border-black transition-all"
             }
           >
-            <Link to="/faq">FAQ</Link>
+            <Link to="/faq" className="custom-cursor">
+              FAQ
+            </Link>
           </li>
         </ul>
       </div>
