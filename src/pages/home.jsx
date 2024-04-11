@@ -1,22 +1,15 @@
 import React, { useState } from "react";
 import Pageload from "../components/pageload.jsx";
 import Footer from "../components/footer.jsx";
+import Navbar from "../components/navbar.jsx";
 import GrasIcon from "../assets/images/gras-icon.svg";
 import BubbleIcon from "../assets/images/gedanken.svg";
 import "../index.css";
-import Navbar from "../components/navbar.jsx";
-import Form from "../components/form.jsx";
 
 function Home() {
-  const [showPopup, setShowPopup] = useState(false);
-
-  function togglePopup() {
-    setShowPopup(!showPopup);
-  }
-
   return (
     <>
-      <Navbar toggleForm={togglePopup} />
+      <Navbar />
       <Pageload />
       <main className="container mx-auto px-10 py-5 flex flex-col items-center mb-10">
         <h1 className="text-6xl text-center font-inter-black mb-10 mt-20">
@@ -42,7 +35,6 @@ function Home() {
             ></iframe>
           </div>
         </div>
-        {showPopup && <Form toggleForm={togglePopup} />}
       </main>
       <Footer />
     </>
