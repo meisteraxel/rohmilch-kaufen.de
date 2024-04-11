@@ -16,9 +16,9 @@ function Home() {
 
   return (
     <>
-      <Navbar />
+      <Navbar toggleForm={togglePopup} />
       <Pageload />
-      <main className="container mx-auto px-10 flex flex-col items-center">
+      <main className="container mx-auto px-10 py-20 flex flex-col items-center">
         <h1 className="text-6xl text-center font-inter-extrabold">
           Rohmilch
           <br />
@@ -28,20 +28,13 @@ function Home() {
           <img
             src={GrasIcon}
             alt=""
-            className="w-24 h-24 absolute -z-10 -left-14 -top-1"
+            className="w-24 h-24 absolute -z-10 -left-14 -top-10"
           />
           <img
             src={BubbleIcon}
             alt=""
-            className="w-24 h-24 absolute -z-10 -right-[90px] -top-[45px]"
+            className="w-24 h-24 absolute -z-10 -right-[90px] -top-[75px]"
           />
-          <button
-            className="self-end mb-4 bg-transparent cursor-pointer font-inter-bold text-sm underline hover:opacity-50 transition-opacity"
-            onClick={togglePopup}
-            id="toggleButton"
-          >
-            Vorschlag einreichen
-          </button>
           <div className="bg-[#fafafa] p-5 rounded-xl">
             <iframe
               src="https://airtable.com/embed/appVQeK2S27Ao22O2/shrxwBedOL86REAZz?backgroundColor=purple&layout=card&viewControls=on"
