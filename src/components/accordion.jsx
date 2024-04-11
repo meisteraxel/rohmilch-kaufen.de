@@ -50,6 +50,7 @@ function Accordion() {
     <div className="accordion flex flex-col gap-2">
       {data.map((item, index) => (
         <div
+          key={index}
           onClick={() => toggle(index)}
           className="item rounded-lg bg-white p-5 font-inter cursor-pointer shadow-lg"
         >
