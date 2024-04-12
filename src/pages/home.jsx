@@ -3,9 +3,9 @@ import Pageload from "../components/pageload.jsx";
 import Navbar from "../components/navbar.jsx";
 import Footer from "../components/footer.jsx";
 import GrasIcon from "../assets/images/gras-icon.svg";
-import SmallCircle from "../assets/images/small-circle.png";
-import Circle from "../assets/images/circle.png";
-import Muh from "../assets/images/muh.png";
+import SmallCircle from "../assets/images/small-circle.svg";
+import Circle from "../assets/images/circle.svg";
+import Muh from "../assets/images/muh.svg";
 import "../index.css";
 
 function Home() {

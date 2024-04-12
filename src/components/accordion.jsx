@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import PlusIcon from "../assets/images/plus-icon.png";
+import PlusIcon from "../assets/images/plus-icon.svg";
 import "../index.css";
 
 function Accordion() {
