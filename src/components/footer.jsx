@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Heart from "../assets/images/heart.png";
 import "../index.css";
 
@@ -16,9 +17,9 @@ function Footer() {
           erstellt in Berlin & Sachsen
         </p>
       </div>
-      <a href="#" className="text-white hover:underline">
+      <Link to="/disclaimer" className="text-white hover:underline">
         Disclaimer
-      </a>
+      </Link>
     </footer>
   );
 }
