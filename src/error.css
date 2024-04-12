@@ -1,0 +1,248 @@
+.drip-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.cont {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  border-top: 50px solid #efefef;
+  border-bottom: 50px solid #efefef;
+  filter: url("#goo");
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#goo {
+  position: absolute;
+}
+
+.cont .drip {
+  height: 2.5vh;
+  width: 2.5vw;
+  border-radius: 50%;
+  background: #efefef;
+  position: absolute;
+  top: -100%;
+  animation: falling 8s linear infinite;
+}
+
+@keyframes falling {
+  0% {
+    top: -100%;
+  }
+  50% {
+    top: 0%;
+  }
+  80% {
+    top: 80%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.cont .drip:nth-child(1) {
+  border-color: #efefef;
+  height: 290px;
+  width: 290px;
+  animation-delay: -0.2s;
+  background: #efefef;
+  left: 65%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(2) {
+  border-color: #efefef;
+  height: 250px;
+  width: 250px;
+  animation-delay: -0.4s;
+  background: #efefef;
+  left: 95%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(3) {
+  border-color: #efefef;
+  height: 380px;
+  width: 380px;
+  animation-delay: -0.6s;
+  background: #efefef;
+  left: 49%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(4) {
+  border-color: #efefef;
+  height: 290px;
+  width: 290px;
+  animation-delay: -0.8s;
+  background: #efefef;
+  left: 16%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(5) {
+  border-color: #efefef;
+  height: 200px;
+  width: 200px;
+  animation-delay: -1s;
+  background: #efefef;
+  left: 44%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(6) {
+  border-color: #efefef;
+  height: 140px;
+  width: 140px;
+  animation-delay: -1.2s;
+  background: #efefef;
+  left: 21%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(7) {
+  border-color: #efefef;
+  height: 50px;
+  width: 50px;
+  animation-delay: -1.4s;
+  background: #efefef;
+  left: 16%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(8) {
+  border-color: #efefef;
+  height: 20px;
+  width: 20px;
+  animation-delay: -1.6s;
+  background: #efefef;
+  left: 2%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(9) {
+  border-color: #efefef;
+  height: 20px;
+  width: 20px;
+  animation-delay: -1.8s;
+  background: #efefef;
+  left: 5%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(10) {
+  border-color: #efefef;
+  height: 160px;
+  width: 160px;
+  animation-delay: -2s;
+  background: #efefef;
+  left: 72%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(11) {
+  border-color: #efefef;
+  height: 110px;
+  width: 110px;
+  animation-delay: -2.2s;
+  background: #efefef;
+  left: 64%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(12) {
+  border-color: #efefef;
+  height: 40px;
+  width: 40px;
+  animation-delay: -2.4s;
+  background: #efefef;
+  left: 87%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(13) {
+  border-color: #efefef;
+  height: 180px;
+  width: 180px;
+  animation-delay: -2.6s;
+  background: #efefef;
+  left: 89%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(14) {
+  border-color: #efefef;
+  height: 40px;
+  width: 40px;
+  animation-delay: -2.8s;
+  background: #efefef;
+  left: 57%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(15) {
+  border-color: #efefef;
+  height: 130px;
+  width: 130px;
+  animation-delay: -3s;
+  background: #efefef;
+  left: 64%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(16) {
+  border-color: #efefef;
+  height: 325px;
+  width: 325px;
+  animation-delay: -3.2s;
+  background: #efefef;
+  left: 4%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(17) {
+  border-color: #efefef;
+  height: 270px;
+  width: 270px;
+  animation-delay: -3.4s;
+  background: #efefef;
+  left: 34%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(18) {
+  border-color: #efefef;
+  height: 130px;
+  width: 130px;
+  animation-delay: -3.6s;
+  background: #efefef;
+  left: 40%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(19) {
+  border-color: #efefef;
+  height: 230px;
+  width: 230px;
+  animation-delay: -3.8s;
+  background: #efefef;
+  left: 22%;
+  margin-left: 60px;
+}
+
+.cont .drip:nth-child(20) {
+  border-color: #efefef;
+  height: 200px;
+  width: 200px;
+  animation-delay: -4s;
+  background: #efefef;
+  left: 80%;
+  margin-left: 60px;
+}
