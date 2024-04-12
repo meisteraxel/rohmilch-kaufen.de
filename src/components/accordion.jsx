@@ -54,7 +54,7 @@ function Accordion() {
           onClick={() => toggle(index)}
           className="item rounded-lg bg-white p-5 font-inter cursor-pointer shadow-lg"
         >
-          <div className="title font-inter-bold text-base flex justify-between items-center mb-3">
+          <div className="title font-inter-bold text-base flex justify-between items-center">
             <h2>{item.question}</h2>
             <img
               src={PlusIcon}
@@ -65,7 +65,7 @@ function Accordion() {
               }
             />
           </div>
-          <div className={selected === index ? "content show" : "content"}>
+          <div className={selected === index ? "content show mt-4" : "content"}>
             {item.answer}
           </div>
         </div>
