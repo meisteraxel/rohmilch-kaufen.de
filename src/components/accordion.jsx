@@ -55,7 +55,7 @@ function Accordion() {
           className="item rounded-lg bg-white p-5 font-inter cursor-pointer shadow-lg"
         >
           <div className="title font-inter-bold text-base flex justify-between items-center">
-            <h2>{item.question}</h2>
+            <h2 className="my-1">{item.question}</h2>
             <img
               src={PlusIcon}
               className={
@@ -65,7 +65,7 @@ function Accordion() {
               }
             />
           </div>
-          <div className={selected === index ? "content show mt-4" : "content"}>
+          <div className={selected === index ? "content show" : "content"}>
             {item.answer}
           </div>
         </div>

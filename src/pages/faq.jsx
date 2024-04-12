@@ -41,7 +41,7 @@ function Faq() {
             alt=""
             className="absolute w-28 -z-10 -right-[135px] -top-[120px] opacity-0 fadeIn-animation-third"
           />
-          <div className="bg-[#fafafa] p-5 rounded-xl h-[550px] flex items-center">
+          <div className="bg-[#fafafa] p-5 rounded-xl h-[570px] flex items-center">
             <Accordion />
           </div>
         </div>
