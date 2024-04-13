@@ -5,7 +5,7 @@ import "../index.css";
 
 function Footer() {
   return (
-    <footer className="container mx-auto mt-auto p-10 flex items-center justify-between text-xs font-inter-bold text-white">
+    <footer className="container mx-auto mt-auto p-10 sm:flex-row sm:gap-0 gap-4 flex-col flex items-center justify-between text-xs font-inter-bold text-white">
       <div>
         <p>
           Mit{" "}

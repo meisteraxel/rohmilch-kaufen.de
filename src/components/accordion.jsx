@@ -55,17 +55,23 @@ function Accordion() {
           className="item rounded-lg bg-white p-5 font-inter cursor-pointer shadow-lg"
         >
           <div className="title font-inter-bold text-base flex justify-between items-center">
-            <h2 className="my-1">{item.question}</h2>
+            <h2 className="my-1 md:text-base text-xs">{item.question}</h2>
             <img
               src={PlusIcon}
               className={
                 selected === index
-                  ? "text-2xl rotate-45 transition-all w-4"
-                  : "text-2xl transition-all w-4"
+                  ? "rotate-45 transition-all w-4"
+                  : "transition-all w-4"
               }
             />
           </div>
-          <div className={selected === index ? "content show" : "content"}>
+          <div
+            className={
+              selected === index
+                ? "content show md:text-base text-xs"
+                : "content md:text-base text-xs"
+            }
+          >
             {item.answer}
           </div>
         </div>

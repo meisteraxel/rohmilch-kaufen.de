@@ -11,7 +11,7 @@ function Form(props) {
   return (
     <div
       id="popup"
-      className="flex fixed inset-0 items-center justify-center z-50"
+      className="flex fixed inset-0 items-center justify-center z-50 px-2"
     >
       <div className="fixed inset-0 bg-gray-800 opacity-50"></div>
       <div className="container max-w-5xl flex flex-col items-center bg-white p-6 rounded shadow-sm z-10">

@@ -22,7 +22,7 @@ function Pageload() {
           } flex items-center justify-center flex-col`}
         >
           <img src={CowAnimation} alt="cow animation" />
-          <p className="text-white font-pacifico text-2xl text-center">
+          <p className="text-white font-pacifico sm:text-2xl text-lg text-center">
             Einen Moment, Kühe werden gemolken...
           </p>
         </div>

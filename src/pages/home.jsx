@@ -24,32 +24,34 @@ function Home() {
     <>
       <Navbar />
       {runPageload && <Pageload />}
-      <main className="container mx-auto px-10 py-5 flex flex-col items-center mb-10">
-        <h1 className="text-6xl text-center font-inter-black mb-10 mt-20">
+      <main className="container mx-auto py-5 flex flex-col items-center mb-10 px-5">
+        <h1 className="md:text-6xl text-5xl text-center font-inter-black mb-10 mt-20">
           Rohmilch
           <br />
-          <span className="font-pacifico mt-2 text-5xl">Übersicht</span>
+          <span className="font-pacifico mt-2 md:text-5xl text-4xl">
+            Übersicht
+          </span>
         </h1>
         <div className="container relative flex flex-col max-w-[1000px]">
           <img
             src={GrasIcon}
             alt=""
-            className="w-18 h-18 absolute -z-10 -left-12 -top-12"
+            className="absolute -z-10 w-8 h-8 -left-5 -top-6 sm:w-18 sm:h-18 sm:-left-12 sm:-top-12"
           />
           <img
             src={SmallCircle}
             alt=""
-            className=" absolute w-3 -z-10 -right-[10px] -top-[20px] opacity-0 fadeIn-animation-first hidden lg:block"
+            className=" absolute -z-10 w-2 right-10 -top-[10px] sm:w-3 sm:-right-[10px] sm:-top-[20px] opacity-0 fadeIn-animation-first"
           />
           <img
             src={Circle}
             alt=""
-            className="absolute w-5 -z-10 -right-[35px] -top-[35px] opacity-0 fadeIn-animation-second hidden lg:block"
+            className="absolute -z-10 w-3 right-7 -top-[25px] sm:w-5 sm:-right-[35px] sm:-top-[35px] opacity-0 fadeIn-animation-second"
           />
           <img
             src={Muh}
             alt=""
-            className="absolute w-28 -z-10 -right-[135px] -top-[120px] opacity-0 fadeIn-animation-third hidden lg:block"
+            className="absolute -z-10 w-16 -right-3 -top-[80px] sm:w-28 sm:-right-[135px] sm:-top-[120px] opacity-0 fadeIn-animation-third"
           />
           <div className="bg-[#fafafa] p-5 rounded-xl">
             <iframe
