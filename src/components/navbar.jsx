@@ -54,24 +54,22 @@ function Navbar() {
         </button>
         <img src={CowLogo} alt="" className="h-28 lg:hidden" />
         <div className="relative lg:hidden">
-          <button onClick={toggleMenu} className="lg:hidden">
-            <img
-              src={PlusIcon}
-              alt=""
-              className={
-                showMenu ? "rotate-45 transition-all" : "transition-all"
-              }
-            />
+          <button onClick={toggleMenu} className="lg:hidden cta-button">
+            {showMenu ? "Schliessen" : "Menü"}
           </button>
 
           <div
-            className={`absolute top-8 right-2 p-4 bg-white flex flex-col items-center gap-4 border-4 border-black rounded-lg transition-all transform ${
+            className={`absolute top-12 right-0 p-4 bg-white flex flex-col items-center gap-4 border-4 border-black transition-all transform ${
               showMenu ? "opacity-100 scale-100" : "opacity-0 scale-0"
             } origin-top-right w-[250px]`}
           >
-            <Link to="/">Übersicht</Link>
-            <Link to="/faq">FAQ</Link>
-            <button onClick={togglePopup} className="cta-button">
+            <Link to="/" className="self-start">
+              Übersicht
+            </Link>
+            <Link to="/faq" className="self-start">
+              FAQ
+            </Link>
+            <button onClick={togglePopup} className="cta-button w-full">
               Station hinzufügen
             </button>
           </div>
