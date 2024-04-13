@@ -65,9 +65,9 @@ function Navbar() {
           </button>
 
           <div
-            className={`absolute top-8 right-2 p-4 bg-white flex flex-col items-center gap-4 border border-gray-300 rounded-lg transition-all transform ${
+            className={`absolute top-8 right-2 p-4 bg-white flex flex-col items-center gap-4 border-4 border-black rounded-lg transition-all transform ${
               showMenu ? "opacity-100 scale-100" : "opacity-0 scale-0"
-            }`}
+            } origin-top-right w-[250px]`}
           >
             <Link to="/">Übersicht</Link>
             <Link to="/faq">FAQ</Link>
