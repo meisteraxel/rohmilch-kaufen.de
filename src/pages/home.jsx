@@ -36,22 +36,22 @@ function Home() {
           <img
             src={GrasIcon}
             alt=""
-            className="absolute -z-10 w-8 h-8 -left-5 -top-6 sm:w-18 sm:h-18 sm:-left-12 sm:-top-12"
+            className="absolute -z-10 w-16 h-16 -left-12 -top-12 hidden lg:block"
           />
           <img
             src={SmallCircle}
             alt=""
-            className=" absolute -z-10 w-2 right-10 -top-[10px] sm:w-3 sm:-right-[10px] sm:-top-[20px] opacity-0 fadeIn-animation-first"
+            className=" absolute -z-10 w-3 -right-[10px] -top-[20px] opacity-0 fadeIn-animation-first hidden lg:block"
           />
           <img
             src={Circle}
             alt=""
-            className="absolute -z-10 w-3 right-7 -top-[25px] sm:w-5 sm:-right-[35px] sm:-top-[35px] opacity-0 fadeIn-animation-second"
+            className="absolute -z-10 w-5 -right-[35px] -top-[35px] opacity-0 fadeIn-animation-second hidden lg:block"
           />
           <img
             src={Muh}
             alt=""
-            className="absolute -z-10 w-16 -right-3 -top-[80px] sm:w-28 sm:-right-[135px] sm:-top-[120px] opacity-0 fadeIn-animation-third"
+            className="absolute -z-10 w-28 -right-[135px] -top-[120px] opacity-0 fadeIn-animation-third hidden lg:block"
           />
           <div className="bg-[#fafafa] p-5 rounded-xl">
             <iframe
