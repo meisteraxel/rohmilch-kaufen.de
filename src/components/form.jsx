@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../index.css";
 
 function Form(props) {
@@ -8,13 +8,24 @@ function Form(props) {
     }
   });
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      document.getElementById("iframe").style.bottom = "0";
+    }, 200);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div
       id="popup"
       className="flex fixed inset-0 items-center justify-center z-50 px-2"
     >
       <div className="fixed inset-0 bg-gray-800 opacity-50"></div>
-      <div className="container relative -bottom-[5000px] max-w-5xl flex flex-col items-center bg-white p-6 rounded shadow-sm z-10 transition-all transform translate-y-0">
+      <div
+        id="iframe"
+        className="container relative max-w-5xl flex flex-col items-center bg-white p-6 rounded shadow-sm z-10 -bottom-[1000px] transition-all duration-500"
+      >
         <iframe
           src="https://airtable.com/embed/appVQeK2S27Ao22O2/pagzRDnO0wE9H3csR/form"
           className="bg-white w-full border rounded h-[80vh]"
