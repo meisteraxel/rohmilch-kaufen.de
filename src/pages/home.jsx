@@ -11,7 +11,7 @@ import "../index.css";
 
 function Home() {
   const [runPageload, setRunPageload] = useState(true);
-  const [toggleView, setToggleView] = useState(false);
+  const [toggleView, setToggleView] = useState(true);
 
   // Run Pageload Animation only on first visit
   useEffect(() => {
