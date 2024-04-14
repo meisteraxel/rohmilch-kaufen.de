@@ -11,7 +11,7 @@ import "../index.css";
 
 function Home() {
   const [runPageload, setRunPageload] = useState(true);
-  const [toggleView, setToggleView] = useState(true);
+  const [toggleView, setToggleView] = useState("Liste");
 
   // Run Pageload Animation only on first visit
   useEffect(() => {
@@ -22,8 +22,12 @@ function Home() {
     }
   }, []);
 
-  function switchView() {
-    setToggleView(!toggleView);
+  function setList() {
+    setToggleView("Liste");
+  }
+
+  function setMap() {
+    setToggleView("Karte");
   }
 
   return (
@@ -42,7 +46,7 @@ function Home() {
           <img
             src={GrasIcon}
             alt=""
-            className="absolute -z-10 w-16 h-16 -left-12 -top-12 hidden lg:block"
+            className="absolute -z-10 w-16 h-16 -left-12 top-1 hidden lg:block"
           />
           <img
             src={SmallCircle}
@@ -59,20 +63,32 @@ function Home() {
             alt=""
             className="absolute -z-10 w-28 -right-[135px] -top-[120px] opacity-0 fadeIn-animation-third hidden lg:block"
           />
-          <button
-            onClick={switchView}
-            className="cta-button w-36 self-center font-inter-bold"
-          >
-            {toggleView ? "Liste" : "Karte"}
-          </button>
+          <div className="md:self-end self-center mb-3">
+            <button
+              onClick={setList}
+              className={`cta-button w-24 font-inter-bold ${
+                toggleView === "Liste" ? "bg-black text-white !important" : ""
+              }`}
+            >
+              Liste
+            </button>
+            <button
+              onClick={setMap}
+              className={`cta-button w-24 font-inter-bold ${
+                toggleView === "Karte" ? "bg-black text-white" : ""
+              }`}
+            >
+              Karte
+            </button>
+          </div>
           <div className="bg-[#fafafa] p-5 rounded-xl">
-            {toggleView && (
+            {toggleView === "Liste" && (
               <iframe
                 src="https://airtable.com/embed/appVQeK2S27Ao22O2/shrxwBedOL86REAZz?backgroundColor=purple&layout=card&viewControls=on"
                 className="bg-white w-full h-[60vh] rounded-2xl border"
               ></iframe>
             )}
-            {!toggleView && (
+            {toggleView === "Karte" && (
               <iframe
                 src="https://www.google.com/maps/d/u/0/embed?mid=18Hnv5oS2Geg97o_bpRmjqbcBEttpTK0&ehbc=2E312F&noprof=1"
                 className="bg-white w-full h-[60vh] rounded-2xl border"

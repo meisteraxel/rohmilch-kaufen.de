@@ -34,8 +34,8 @@ function Navbar() {
             <li
               className={
                 location.pathname === "/"
-                  ? "border-b-4 border-black py-1 relative"
-                  : "py-1 relative nav-link"
+                  ? "border-b-4 border-black py-1 relative h-8"
+                  : "py-1 relative nav-link h-8"
               }
             >
               <Link to="/" className="custom-cursor">
@@ -45,8 +45,8 @@ function Navbar() {
             <li
               className={
                 location.pathname === "/faq"
-                  ? "border-b-4 border-black py-1 relative"
-                  : "py-1 relative nav-link"
+                  ? "border-b-4 border-black py-1 relative h-8"
+                  : "py-1 relative nav-link h-8"
               }
             >
               <Link to="/faq" className="custom-cursor">

@@ -12,7 +12,7 @@ function Disclaimer() {
   return (
     <>
       <Navbar />
-      <main className="container mx-auto px-5 py-5 flex flex-col items-center mb-10">
+      <main className="container mx-auto py-5 flex flex-col items-center mb-10 px-5">
         <h1 className="md:text-6xl text-5xl text-center font-inter-black mt-20 mb-10">
           DISCLAIMER
           <br />
