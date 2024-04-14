@@ -1,37 +1,56 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../index.css";
 
 function Form(props) {
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      props.toggleForm();
-    }
-  });
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      document.getElementById("iframe").style.bottom = "0";
-    }, 200);
-
-    return () => clearTimeout(timer);
+    setIsVisible(true);
   }, []);
+
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setIsVisible(false);
+        setTimeout(() => {
+          props.toggleForm();
+        }, 500);
+      }
+    };
+
+    document.addEventListener("keydown", handleEscape);
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+    };
+  }, [props]);
+
+  const handleClose = () => {
+    setIsVisible(false);
+    setTimeout(() => {
+      props.toggleForm();
+    }, 500);
+  };
 
   return (
     <div
       id="popup"
-      className="flex fixed inset-0 items-center justify-center z-50 px-2"
+      className={`fixed inset-0 flex items-center justify-center z-50 px-2 transition-opacity duration-500 ${
+        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+      }`}
     >
       <div className="fixed inset-0 bg-gray-800 opacity-50"></div>
       <div
-        id="iframe"
-        className="container relative max-w-5xl flex flex-col items-center bg-white p-6 rounded shadow-sm z-10 -bottom-[1000px] transition-all duration-500"
+        className={`container relative max-w-5xl flex flex-col items-center bg-white p-6 rounded shadow-sm z-10 transition-all duration-500 ${
+          isVisible ? "bottom-0" : "-bottom-[1000px]"
+        }`}
       >
         <iframe
           src="https://airtable.com/embed/appVQeK2S27Ao22O2/pagzRDnO0wE9H3csR/form"
           className="bg-white w-full border rounded h-[70vh]"
         ></iframe>
         <button
-          onClick={props.toggleForm}
+          onClick={handleClose}
           className="border-[3px] px-3 py-2 mt-6 border-black font-inter-bold w-40 cta-button"
         >
           Schliessen
