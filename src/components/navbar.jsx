@@ -34,8 +34,8 @@ function Navbar() {
             <li
               className={
                 location.pathname === "/"
-                  ? "border-b-4 border-black py-1 relative h-8"
-                  : "py-1 relative nav-link h-8"
+                  ? "border-b-4 border-black py-1 relative h-10"
+                  : "py-1 relative nav-link h-10"
               }
             >
               <Link to="/" className="custom-cursor">
@@ -45,8 +45,8 @@ function Navbar() {
             <li
               className={
                 location.pathname === "/faq"
-                  ? "border-b-4 border-black py-1 relative h-8"
-                  : "py-1 relative nav-link h-8"
+                  ? "border-b-4 border-black py-1 relative h-10"
+                  : "py-1 relative nav-link h-10"
               }
             >
               <Link to="/faq" className="custom-cursor">
@@ -56,7 +56,10 @@ function Navbar() {
           </ul>
         </div>
         <img src={CowLogo} alt="" className="h-28 hidden lg:block" />
-        <button onClick={togglePopup} className="cta-button hidden lg:block">
+        <button
+          onClick={togglePopup}
+          className="cta-button px-4 py-3 hidden lg:block"
+        >
           Station hinzufügen
         </button>
         <Link to="/" className="lg:hidden">

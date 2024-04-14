@@ -66,7 +66,7 @@ function Home() {
           <div className="md:self-end self-center mb-3">
             <button
               onClick={setList}
-              className={`cta-button w-24 font-inter-bold ${
+              className={`cta-button w-24 px-4 py-2 font-inter-bold ${
                 toggleView === "Liste" ? "bg-black text-white !important" : ""
               }`}
             >
@@ -74,7 +74,7 @@ function Home() {
             </button>
             <button
               onClick={setMap}
-              className={`cta-button w-24 font-inter-bold ${
+              className={`cta-button w-24 px-4 py-2 font-inter-bold ${
                 toggleView === "Karte" ? "bg-black text-white" : ""
               }`}
             >

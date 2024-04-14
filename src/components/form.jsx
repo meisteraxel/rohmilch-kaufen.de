@@ -51,7 +51,7 @@ function Form(props) {
         ></iframe>
         <button
           onClick={handleClose}
-          className="border-[3px] px-3 py-2 mt-6 border-black font-inter-bold w-40 cta-button"
+          className="border-[3px] px-4 py-3 mt-6 border-black font-inter-bold w-40 cta-button"
         >
           Schliessen
         </button>
