@@ -52,14 +52,17 @@ function Navbar() {
         <button onClick={togglePopup} className="cta-button hidden lg:block">
           Station hinzufügen
         </button>
-        <img src={CowLogo} alt="" className="h-28 lg:hidden" />
+        <Link to="/" className="lg:hidden">
+          <img src={CowLogo} alt="" className="h-28 lg:hidden" />
+        </Link>
+
         <div className="relative lg:hidden">
           <button onClick={toggleMenu} className="lg:hidden cta-button">
             {showMenu ? "Schliessen" : "Menü"}
           </button>
 
           <div
-            className={`absolute top-12 right-0 p-4 bg-white flex flex-col items-center gap-4 border-4 border-black transition-all transform ${
+            className={`absolute top-12 right-0 p-4 bg-black flex flex-col text-white items-center gap-4 transition-all transform ${
               showMenu ? "opacity-100 scale-100" : "opacity-0 scale-0"
             } origin-top-right w-[250px]`}
           >
@@ -69,7 +72,10 @@ function Navbar() {
             <Link to="/faq" className="self-start">
               FAQ
             </Link>
-            <button onClick={togglePopup} className="cta-button w-full">
+            <button
+              onClick={togglePopup}
+              className="cta-button-inverted w-full"
+            >
               Station hinzufügen
             </button>
           </div>
