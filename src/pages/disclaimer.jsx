@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar.jsx";
 import Footer from "../components/footer.jsx";
+import ScrollToTop from "../components/scrolltotop.js";
 import GrasIcon from "../assets/images/gras-icon.svg";
 import SmallCircle from "../assets/images/small-circle.svg";
 import Circle from "../assets/images/circle.svg";
@@ -94,6 +95,7 @@ function Disclaimer() {
         </div>
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

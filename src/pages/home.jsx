@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Pageload from "../components/pageload.jsx";
 import Navbar from "../components/navbar.jsx";
 import Footer from "../components/footer.jsx";
+import ScrollToTop from "../components/scrolltotop.js";
 import GrasIcon from "../assets/images/gras-icon.svg";
 import SmallCircle from "../assets/images/small-circle.svg";
 import Circle from "../assets/images/circle.svg";
@@ -62,6 +63,7 @@ function Home() {
         </div>
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
