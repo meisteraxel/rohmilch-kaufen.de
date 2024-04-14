@@ -56,7 +56,7 @@ function Disclaimer() {
               <p className="font-inter max-w-2xl md:text-base text-xs">
                 Ihr könnt uns jedoch über folgende Email erreichen:
                 <a
-                  href="mailto:"
+                  href="mailto:rohmlich-kaufen@gmail.com"
                   className="underline ml-1 md:text-base text-xs"
                 >
                   rohmlich-kaufen@gmail.com
