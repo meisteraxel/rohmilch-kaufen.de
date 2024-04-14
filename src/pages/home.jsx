@@ -11,6 +11,7 @@ import "../index.css";
 
 function Home() {
   const [runPageload, setRunPageload] = useState(true);
+  const [toggleView, setToggleView] = useState(false);
 
   // Run Pageload Animation only on first visit
   useEffect(() => {
@@ -20,6 +21,10 @@ function Home() {
       setRunPageload(false);
     }
   }, []);
+
+  function switchView() {
+    setToggleView(!toggleView);
+  }
 
   return (
     <>
@@ -54,11 +59,25 @@ function Home() {
             alt=""
             className="absolute -z-10 w-28 -right-[135px] -top-[120px] opacity-0 fadeIn-animation-third hidden lg:block"
           />
+          <button
+            onClick={switchView}
+            className="cta-button w-36 self-center font-inter-bold"
+          >
+            {toggleView ? "Liste" : "Karte"}
+          </button>
           <div className="bg-[#fafafa] p-5 rounded-xl">
-            <iframe
-              src="https://airtable.com/embed/appVQeK2S27Ao22O2/shrxwBedOL86REAZz?backgroundColor=purple&layout=card&viewControls=on"
-              className="bg-white w-full h-[60vh] rounded-2xl border"
-            ></iframe>
+            {toggleView && (
+              <iframe
+                src="https://airtable.com/embed/appVQeK2S27Ao22O2/shrxwBedOL86REAZz?backgroundColor=purple&layout=card&viewControls=on"
+                className="bg-white w-full h-[60vh] rounded-2xl border"
+              ></iframe>
+            )}
+            {!toggleView && (
+              <iframe
+                src="https://www.google.com/maps/d/u/0/embed?mid=18Hnv5oS2Geg97o_bpRmjqbcBEttpTK0&ehbc=2E312F&noprof=1"
+                className="bg-white w-full h-[60vh] rounded-2xl border"
+              ></iframe>
+            )}
           </div>
         </div>
       </main>
