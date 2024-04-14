@@ -155,7 +155,7 @@ body {
 }
 
 .content.show {
-  max-height: 1px;
+  max-height: 150px;
 }
 
 .nav-link::after {

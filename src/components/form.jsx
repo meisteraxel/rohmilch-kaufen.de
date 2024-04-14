@@ -28,7 +28,7 @@ function Form(props) {
       >
         <iframe
           src="https://airtable.com/embed/appVQeK2S27Ao22O2/pagzRDnO0wE9H3csR/form"
-          className="bg-white w-full border rounded h-[80vh]"
+          className="bg-white w-full border rounded h-[70vh]"
         ></iframe>
         <button
           onClick={props.toggleForm}
