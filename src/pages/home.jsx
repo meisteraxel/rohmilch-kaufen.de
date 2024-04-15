@@ -90,7 +90,7 @@ function Home() {
             )}
             {toggleView === "Karte" && (
               <iframe
-                src="https://www.google.com/maps/d/u/0/embed?mid=18Hnv5oS2Geg97o_bpRmjqbcBEttpTK0&ehbc=2E312F&noprof=1"
+                src="https://www.google.com/maps/d/embed?mid=1j-vSFXpJLG0BVcDzCjzG6S4hqTxNTvs&ehbc=2E312F&noprof=1"
                 className="bg-white w-full h-[60vh] rounded-2xl border"
               ></iframe>
             )}
