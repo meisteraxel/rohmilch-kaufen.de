@@ -48,6 +48,7 @@ function Form(props) {
         <iframe
           src="https://airtable.com/embed/appVQeK2S27Ao22O2/pagzRDnO0wE9H3csR/form"
           className="bg-white w-full border rounded h-[70vh]"
+          title="Formular zum Einreichen neuer Stationen"
         ></iframe>
         <button
           onClick={handleClose}

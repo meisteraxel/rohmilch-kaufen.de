@@ -99,12 +99,14 @@ function Home() {
               <iframe
                 src="https://airtable.com/embed/appVQeK2S27Ao22O2/shrxwBedOL86REAZz?backgroundColor=purple&layout=card&viewControls=on"
                 className="bg-white w-full h-[60vh] rounded-2xl border"
+                title="Listenansicht aller Stationen"
               ></iframe>
             )}
             {toggleView === "Karte" && (
               <iframe
                 src="https://www.google.com/maps/d/embed?mid=1j-vSFXpJLG0BVcDzCjzG6S4hqTxNTvs&ehbc=2E312F&noprof=1"
                 className="bg-white w-full h-[60vh] rounded-2xl border"
+                title="Kartenansicht aller Stationen"
               ></iframe>
             )}
           </div>
