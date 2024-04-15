@@ -60,7 +60,7 @@ body {
 }
 
 .pageload-container {
-  z-index: 9999;
+  z-index: 21474836312;
   position: fixed;
   inset: 0;
   display: flex;
