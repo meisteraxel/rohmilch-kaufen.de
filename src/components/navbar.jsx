@@ -67,7 +67,10 @@ function Navbar() {
         </Link>
 
         <div className="relative lg:hidden">
-          <button onClick={toggleMenu} className="lg:hidden cta-button">
+          <button
+            onClick={toggleMenu}
+            className="lg:hidden px-4 py-3 cta-button"
+          >
             {showMenu ? "Schliessen" : "Menü"}
           </button>
 
