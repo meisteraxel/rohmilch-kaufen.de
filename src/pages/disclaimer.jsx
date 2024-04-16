@@ -7,11 +7,17 @@ import SmallCircle from "../assets/images/small-circle.svg";
 import Circle from "../assets/images/circle.svg";
 import Muh from "../assets/images/muh.svg";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import "../index.css";
 
 function Disclaimer() {
+  const pageTitle = "Disclaimer";
+
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <Navbar />
       <main className="container mx-auto py-5 flex flex-col items-center mb-10 px-5">
         <motion.h1
@@ -32,20 +38,42 @@ function Disclaimer() {
             alt=""
             className="absolute -z-10 w-16 h-16 -left-12 -top-12 hidden lg:block"
           />
-          <img
+          <motion.img
             src={SmallCircle}
             alt=""
             className=" absolute -z-10 w-3 -right-[10px] -top-[20px] opacity-0 fadeIn-animation-first hidden lg:block"
+            animate={{
+              x: [0, 3, 0],
+              transition: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+            }}
           />
-          <img
+          <motion.img
             src={Circle}
             alt=""
             className="absolute -z-10 w-5 -right-[35px] -top-[35px] opacity-0 fadeIn-animation-second hidden lg:block"
+            animate={{
+              x: [0, 4.5, 0],
+              transition: {
+                duration: 5,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 0.5,
+              },
+            }}
           />
-          <img
+          <motion.img
             src={Muh}
             alt=""
             className="absolute -z-10 w-28 -right-[135px] -top-[120px] opacity-0 fadeIn-animation-third hidden lg:block"
+            animate={{
+              x: [0, 6, 0],
+              transition: {
+                duration: 5,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 1,
+              },
+            }}
           />
           <div className="bg-[#fafafa] p-5 rounded-xl">
             <div className="bg-white rounded-2xl p-5">
