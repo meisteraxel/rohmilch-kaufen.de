@@ -7,6 +7,7 @@ import GrasIcon from "../assets/images/gras-icon.svg";
 import SmallCircle from "../assets/images/small-circle.svg";
 import Circle from "../assets/images/circle.svg";
 import Muh from "../assets/images/muh.svg";
+import { motion } from "framer-motion";
 import "../index.css";
 
 function Faq() {
@@ -14,13 +15,18 @@ function Faq() {
     <>
       <Navbar />
       <main className="container mx-auto px-5 py-5 flex flex-col items-center mb-10">
-        <h1 className="md:text-6xl text-5xl text-center font-inter-black mt-20 mb-10">
+        <motion.h1
+          initial={{ opacity: 0, translateY: 30 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ type: "spring" }}
+          className="md:text-6xl text-5xl text-center font-inter-black mt-20 mb-10"
+        >
           FAQ
           <br />
           <span className="font-pacifico mt-2 md:text-5xl text-4xl">
             Fragen & Antworten
           </span>
-        </h1>
+        </motion.h1>
         <div className="container relative flex flex-col max-w-[1000px]">
           <img
             src={GrasIcon}
