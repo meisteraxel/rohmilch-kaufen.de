@@ -20,6 +20,7 @@ function Home() {
   useEffect(() => {
     if (sessionStorage.getItem("visited") === null) {
       setTimeout(() => sessionStorage.setItem("visited", true), 1000);
+      document.body.classList.add("show-background");
     } else if (sessionStorage.getItem("visited") === "true") {
       setRunPageload(false);
     }
