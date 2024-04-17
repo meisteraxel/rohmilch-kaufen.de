@@ -19,10 +19,13 @@ function Home() {
   // Run Pageload Animation only on first visit
   useEffect(() => {
     if (sessionStorage.getItem("visited") === null) {
-      setTimeout(() => sessionStorage.setItem("visited", true), 1000);
-      document.body.classList.add("show-background");
+      setTimeout(() => {
+        sessionStorage.setItem("visited", true);
+        document.body.classList.add("show-background");
+      }, 1000);
     } else if (sessionStorage.getItem("visited") === "true") {
       setRunPageload(false);
+      document.body.classList.add("show-background");
     }
   }, []);
 

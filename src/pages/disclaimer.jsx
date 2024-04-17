@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/navbar.jsx";
 import Footer from "../components/footer.jsx";
 import ScrollToTop from "../components/scrolltotop.js";
@@ -12,6 +12,10 @@ import "../index.css";
 
 function Disclaimer() {
   const pageTitle = "Disclaimer";
+
+  useEffect(() => {
+    document.body.classList.add("show-background");
+  }, []);
 
   return (
     <>

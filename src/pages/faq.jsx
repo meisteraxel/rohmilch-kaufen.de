@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/navbar.jsx";
 import Footer from "../components/footer.jsx";
 import Accordion from "../components/accordion.jsx";
@@ -13,6 +13,10 @@ import "../index.css";
 
 function Faq() {
   const pageTitle = "FAQ";
+
+  useEffect(() => {
+    document.body.classList.add("show-background");
+  }, []);
 
   return (
     <>

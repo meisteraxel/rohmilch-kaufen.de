@@ -57,10 +57,12 @@ body {
   background-repeat: repeat-x;
   background-size: auto 100%;
   background-position-y: 600px;
+  background-color: black;
 }
 
 .show-background {
   background-image: url(./assets/images/background-wave.svg);
+  background-color: white;
 }
 
 .pageload-container {
