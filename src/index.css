@@ -21,12 +21,6 @@
 }
 
 @font-face {
-  font-family: "Inter-ExtraBold";
-  src: url("./assets/fonts/Inter-ExtraBold.ttf");
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Inter-Black";
   src: url("./assets/fonts/Inter-Black.ttf");
   font-display: swap;
@@ -42,10 +36,6 @@
 
 .font-inter-bold {
   font-family: "Inter-Bold", sans-serif !important;
-}
-
-.font-inter-extrabold {
-  font-family: "Inter-ExtraBold", sans-serif !important;
 }
 
 .font-inter-black {
