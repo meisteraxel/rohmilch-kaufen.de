@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CowAnimation from "../assets/images/cow-animation.gif";
+import CowAnimation from "../assets/images/cow-animation-small.gif";
 import "../index.css";
 
 function Pageload() {
