@@ -10,6 +10,7 @@ import Muh from "../assets/images/muh.svg";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import "../index.css";
+import DataTable from "../components/datatable.jsx";
 
 function Home() {
   const pageTitle = "Frische Quelle: Rohmilch finden & genießen";
@@ -131,18 +132,12 @@ function Home() {
               Karte
             </button>
           </div>
-          <div className="bg-[#fafafa] p-5 rounded-xl">
-            {toggleView === "Liste" && (
-              <iframe
-                src="https://airtable.com/embed/appVQeK2S27Ao22O2/shrxwBedOL86REAZz?backgroundColor=purple&layout=card&viewControls=on"
-                className="bg-white w-full h-[60vh] rounded-2xl border"
-                title="Listenansicht aller Stationen"
-              ></iframe>
-            )}
+          <div className="bg-[#fafafa] p-5 rounded-xl min-h-[70vh]">
+            {toggleView === "Liste" && <DataTable />}
             {toggleView === "Karte" && (
               <iframe
                 src="https://www.google.com/maps/d/embed?mid=1j-vSFXpJLG0BVcDzCjzG6S4hqTxNTvs&ehbc=2E312F&noprof=1"
-                className="bg-white w-full h-[60vh] rounded-2xl border"
+                className="bg-white w-full h-[65vh] rounded-2xl border"
                 title="Kartenansicht aller Stationen"
               ></iframe>
             )}
