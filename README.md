@@ -17,7 +17,7 @@ The platform is live and accessible at [rohmilch-kaufen.de](https://rohmilch-kau
 ## Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript, React.js
-- **Database**: Airtable
+- **Database**: Supabase
 - **Maps Integration**: Google Maps
 
 ## Screenshots
