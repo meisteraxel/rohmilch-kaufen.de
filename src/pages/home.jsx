@@ -14,7 +14,7 @@ import "../index.css";
 function Home() {
   const pageTitle = "Frische Quelle: Rohmilch finden & genießen";
   const [runPageload, setRunPageload] = useState(true);
-  const [toggleView, setToggleView] = useState("Liste");
+  const [toggleView, setToggleView] = useState("Karte");
 
   // Run Pageload Animation only on first visit
   useEffect(() => {
